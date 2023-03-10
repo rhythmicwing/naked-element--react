@@ -1,0 +1,10 @@
+@use 'variables';
+
+@mixin mq-pc($mode) {
+
+    $result: map-get(variables.$color-scheme, $mode);
+
+    @media (prefers-color-scheme: $result) {
+        @content;
+    }
+}

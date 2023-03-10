@@ -1,0 +1,287 @@
+$color-scheme:(
+    light: light,
+    dark: dark,
+);
+
+$screen-size:(
+    desktop: 1023px,
+    pad: 767px,
+    dark: 600px,
+    mobile: 500px,
+);
+
+$primary-1:#000000;
+$primary-2:#390c00;
+$primary-3:#5d1800;
+$primary-4:#701f00;
+$primary-5:#832600;
+$primary-6:#972d00;
+$primary-7:#ac3500;
+$primary-8:#d64400;
+$primary-9:#fc5b1b;
+$primary-10:#ff8b64;
+$primary-11:#ffb59d;
+$primary-12:#ffdbd0;
+$primary-13:#ffede8;
+$primary-14:#fff8f6;
+$primary-15:#fffbff;
+$primary-16:#FFFFFF;
+
+$secondary-1:#000000;
+$secondary-2:#2c160e;
+$secondary-3:#442a21;
+$secondary-4:#50352c;
+$secondary-5:#5d4036;
+$secondary-6:#6a4b41;
+$secondary-7:#77574d;
+$secondary-8:#926f64;
+$secondary-9:#ad887d;
+$secondary-10:#caa296;
+$secondary-11:#e7bdb0;
+$secondary-12:#ffdbd0;
+$secondary-13:#ffede8;
+$secondary-14:#fff8f6;
+$secondary-15:#fffbff;
+$secondary-16:#FFFFFF;
+
+$tertiary-1:#000000;
+$tertiary-2:#221b00;
+$tertiary-3:#3a3005;
+$tertiary-4:#453b0f;
+$tertiary-5:#51461a;
+$tertiary-6:#5e5224;
+$tertiary-7:#6a5e2f;
+$tertiary-8:#847745;
+$tertiary-9:#9f905c;
+$tertiary-10:#baab74;
+$tertiary-11:#d7c68d;
+$tertiary-12:#f4e2a7;
+$tertiary-13:#fff0c2;
+$tertiary-14:#fff9ee;
+$tertiary-15:#fffbff;
+$tertiary-16:#FFFFFF;
+
+$error-1:#000000;
+$error-2:#410002;
+$error-3:#690005;
+$error-4:#7E0007;
+$error-5:#93000A;
+$error-6:#A80710;
+$error-7:#BA1A1A;
+$error-8:#DE3730;
+$error-9:#FF5449;
+$error-10:#FF897D;
+$error-11:#FFB4AB;
+$error-12:#FFDAD6;
+$error-13:#FFEDEA;
+$error-14:#FFF8F7;
+$error-15:#FFFBFF;
+$error-16:#FFFFFF;
+
+$neutral-1:#000000;
+$neutral-2:#201a18;
+$neutral-3:#362f2d;
+$neutral-4:#413a37;
+$neutral-5:#4d4543;
+$neutral-6:#59514e;
+$neutral-7:#655c5a;
+$neutral-8:#7f7572;
+$neutral-9:#998e8b;
+$neutral-10:#b4a9a6;
+$neutral-11:#d0c4c1;
+$neutral-12:#ede0dc;
+$neutral-13:#fbeeea;
+$neutral-14:#fff8f6;
+$neutral-15:#fffbff;
+$neutral-16:#FFFFFF;
+
+$neutral-variant-1:#000000;
+$neutral-variant-2:#251915;
+$neutral-variant-3:#3b2d29;
+$neutral-variant-4:#473834;
+$neutral-variant-5:#53433f;
+$neutral-variant-6:#5f4f4a;
+$neutral-variant-7:#6b5b56;
+$neutral-variant-8:#85736e;
+$neutral-variant-9:#a08d87;
+$neutral-variant-10:#bca7a1;
+$neutral-variant-11:#d8c2bb;
+$neutral-variant-12:#f5ded7;
+$neutral-variant-13:#ffede8;
+$neutral-variant-14:#fff8f6;
+$neutral-variant-15:#fffbff;
+$neutral-variant-16:#FFFFFF;
+
+$success-1:#000000;
+$success-2:#002106;
+$success-3:#00390f;
+$success-4:#004614;
+$success-5:#00531a;
+$success-6:#00601f;
+$success-7:#006e25;
+$success-8:#008a31;
+$success-9:#27a644;
+$success-10:#49c25c;
+$success-11:#66df75;
+$success-12:#83fc8e;
+$success-13:#c7ffc4;
+$success-14:#ebffe6;
+$success-15:#f6fff0;
+$success-16:#FFFFFF;
+
+$warning-1:#000000;
+$warning-2:#261a00;
+$warning-3:#3f2e00;
+$warning-4:#4d3800;
+$warning-5:#5b4300;
+$warning-6:#6a4e00;
+$warning-7:#785900;
+$warning-8:#977100;
+$warning-9:#b78a00;
+$warning-10:#d8a300;
+$warning-11:#fabd00;
+$warning-12:#ffdf9e;
+$warning-13:#ffefd4;
+$warning-14:#fff8f2;
+$warning-15:#fffbff;
+$warning-16:#FFFFFF;
+
+
+
+// Typography
+$root-size:16px;
+$font-family:"Roboto", sans-serif;
+
+$headline1--font-size:6rem;
+$headline1--line-height:6rem;
+$headline1--font-weight:300;
+$headline1--letter-spacing:-0.015625em;
+$headline1--text-decoration:inherit;
+$headline1--text-transform:inherit;
+
+$headline2--font-size:3.75rem;
+$headline2--line-height:3.75rem;
+$headline2--font-weight:300;
+$headline2--letter-spacing:-0.0083333333em;
+$headline2--text-decoration:inherit;
+$headline2--text-transform:inherit;
+
+$headline3--font-size:3rem;
+$headline3--line-height:3.125rem;
+$headline3--font-weight:400;
+$headline3--letter-spacing:normal;
+$headline3--text-decoration:inherit;
+$headline3--text-transform:inherit;
+
+$headline4--font-size:2.125rem;
+$headline4--line-height:2.5rem;
+$headline4--font-weight:400;
+$headline4--letter-spacing:0.0073529412em;
+$headline4--text-decoration:inherit;
+$headline4--text-transform:inherit;
+
+$headline5--font-size:1.5rem;
+$headline5--line-height:2rem;
+$headline5--font-weight:400;
+$headline5--letter-spacing:normal;
+$headline5--text-decoration:inherit;
+$headline5--text-transform:inherit;
+
+$headline6--font-size:1.25rem;
+$headline6--line-height:2rem;
+$headline6--font-weight:500;
+$headline6--letter-spacing:0.0125em;
+$headline6--text-decoration:inherit;
+$headline6--text-transform:inherit;
+
+$subtitle1--font-size:1rem;
+$subtitle1--line-height:1.75rem;
+$subtitle1--font-weight:400;
+$subtitle1--letter-spacing:0.009375em;
+$subtitle1--text-decoration:inherit;
+$subtitle1--text-transform:inherit;
+
+$subtitle2--font-size:0.875rem;
+$subtitle2--line-height:1.375rem;
+$subtitle2--font-weight:500;
+$subtitle2--letter-spacing:0.0071428571em;
+$subtitle2--text-decoration:inherit;
+$subtitle2--text-transform:inherit;
+
+$body1--font-size:1rem;
+$body1--line-height:1.5rem;
+$body1--font-weight:400;
+$body1--letter-spacing:0.03125em;
+$body1--text-decoration:inherit;
+$body1--text-transform:inherit;
+
+$body2--font-size:0.875rem;
+$body2--line-height:1.25rem;
+$body2--font-weight:400;
+$body2--letter-spacing:0.0178571429em;
+$body2--text-decoration:inherit;
+$body2--text-transform:inherit;
+
+$caption--font-size:0.75rem;
+$caption--line-height:1.25rem;
+$caption--font-weight:400;
+$caption--letter-spacing:0.0333333333em;
+$caption--text-decoration:inherit;
+$caption--text-transform:inherit;
+
+$button--font-size:0.875rem;
+$button--line-height:2.25rem;
+$button--font-weight:500;
+$button--letter-spacing:0.0892857143em;
+$button--text-decoration:inherit;
+$button--text-transform:uppercase;
+
+$overline--font-size:0.75rem;
+$overline--line-height:2rem;
+$overline--font-weight:500;
+$overline--letter-spacing:0.1666666667em;
+$overline--text-decoration:none;
+$overline--text-transform:uppercase;
+
+
+// Box Model, use to build margin + padding
+$spacing2: 2px;
+$spacing4: 4px;
+$spacing6: 6px;
+$spacing8: 8px;
+$spacing16: 16px;
+$spacing24: 24px;
+$spacing32: 32px;
+$spacing40: 40px;
+$spacing48: 48px;
+$spacing56: 56px;
+$spacing64: 64px;
+$spacing72: 72px;
+$spacing80: 80px;
+
+
+// Elevation
+$z1: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+$z2: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+$z3: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+$z4: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+$z5: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 14px 0px rgb(0 0 0 / 12%);
+$z6: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+$z7: 0px 4px 5px -2px rgb(0 0 0 / 20%), 0px 7px 10px 1px rgb(0 0 0 / 14%), 0px 2px 16px 1px rgb(0 0 0 / 12%);
+$z8: 0px 5px 5px -3px rgb(0 0 0 / 20%), 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+$z9: 0px 5px 6px -3px rgb(0 0 0 / 20%), 0px 9px 12px 1px rgb(0 0 0 / 14%), 0px 3px 16px 2px rgb(0 0 0 / 12%);
+$z10: 0px 6px 6px -3px rgb(0 0 0 / 20%), 0px 10px 14px 1px rgb(0 0 0 / 14%), 0px 4px 18px 3px rgb(0 0 0 / 12%);
+$z11: 0px 6px 7px -4px rgb(0 0 0 / 20%), 0px 11px 15px 1px rgb(0 0 0 / 14%), 0px 4px 20px 3px rgb(0 0 0 / 12%);
+$z12: 0px 7px 8px -4px rgb(0 0 0 / 20%), 0px 12px 17px 2px rgb(0 0 0 / 14%), 0px 5px 22px 4px rgb(0 0 0 / 12%);
+$z13: 0px 7px 8px -4px rgb(0 0 0 / 20%), 0px 13px 19px 2px rgb(0 0 0 / 14%), 0px 5px 24px 4px rgb(0 0 0 / 12%);
+$z14: 0px 7px 9px -4px rgb(0 0 0 / 20%), 0px 14px 21px 2px rgb(0 0 0 / 14%), 0px 5px 26px 4px rgb(0 0 0 / 12%);
+$z15: 0px 8px 9px -5px rgb(0 0 0 / 20%), 0px 15px 22px 2px rgb(0 0 0 / 14%), 0px 6px 28px 5px rgb(0 0 0 / 12%);
+$z16: 0px 8px 10px -5px rgb(0 0 0 / 20%), 0px 16px 24px 2px rgb(0 0 0 / 14%), 0px 6px 30px 5px rgb(0 0 0 / 12%);
+$z17: 0px 8px 11px -5px rgb(0 0 0 / 20%), 0px 17px 26px 2px rgb(0 0 0 / 14%), 0px 6px 32px 5px rgb(0 0 0 / 12%);
+$z18: 0px 9px 11px -5px rgb(0 0 0 / 20%), 0px 18px 28px 2px rgb(0 0 0 / 14%), 0px 7px 34px 6px rgb(0 0 0 / 12%);
+$z19: 0px 9px 12px -6px rgb(0 0 0 / 20%), 0px 19px 29px 2px rgb(0 0 0 / 14%), 0px 7px 36px 6px rgb(0 0 0 / 12%);
+$z20: 0px 10px 13px -6px rgb(0 0 0 / 20%), 0px 20px 31px 3px rgb(0 0 0 / 14%), 0px 8px 38px 7px rgb(0 0 0 / 12%);
+$z21: 0px 10px 13px -6px rgb(0 0 0 / 20%), 0px 21px 33px 3px rgb(0 0 0 / 14%), 0px 8px 40px 7px rgb(0 0 0 / 12%);
+$z22: 0px 10px 14px -6px rgb(0 0 0 / 20%), 0px 22px 35px 3px rgb(0 0 0 / 14%), 0px 8px 42px 7px rgb(0 0 0 / 12%);
+$z23: 0px 11px 14px -7px rgb(0 0 0 / 20%), 0px 23px 36px 3px rgb(0 0 0 / 14%), 0px 9px 44px 8px rgb(0 0 0 / 12%);
+$z24: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);

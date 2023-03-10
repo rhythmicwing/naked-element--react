@@ -1,0 +1,39 @@
+@use '../abstracts' as *;
+
+:root {
+
+    @each $prefer-color-scheme, $colors in $colors-theme {
+        @if $prefer-color-scheme == light {
+            @include mq-pc(#{$prefer-color-scheme}) {
+                @each $type, $color in $colors {
+                    --nl-theme-#{$type}: #{$color};
+                }
+            }
+        }
+        @else if $prefer-color-scheme == dark {
+            @include mq-pc(#{$prefer-color-scheme}) {
+                @each $type, $color in $colors {
+                    --nl-theme-#{$type}: #{$color};
+                }
+            }
+        }
+    }
+
+    // @each $z-id, $z-value in $elevation {
+    //     --mdc-elevation--#{$z-id}:#{$z-value};
+    // }
+
+    // @each $typo-type, $typo-result in $typography {
+    //     @if $typo-type == font-family {
+    //         --mdc-typography-#{$typo-type}: #{$typo-result};
+    //     }
+    //     @if $typo-type != font-family {
+    //         --mdc-typography-#{$typo-type}-font-family: #{map-get($typography, font-family)};
+    //         @each $typo-attr, $typo-value in $typo-result {
+    //             --mdc-typography-#{$typo-type}-#{$typo-attr}: #{$typo-value};
+    //         }
+    //     }
+    // }
+
+}
+

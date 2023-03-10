@@ -12,12 +12,19 @@ function App() {
       
     // </div>
     <Router>
-      <Navbar />
-      <Routes>
-        <Route exact path='/' element={<HomePage />} />
-        <Route path='/button' element={<ButtonPage />} />
-        <Route path='/card' element={<CardPage />} />
-      </Routes>
+      <header>
+        <Navbar />
+      </header>
+
+      <main>
+        <Routes>
+          <Route exact path='/' element={<HomePage />} />
+          <Route path='/button' element={<ButtonPage />} />
+          <Route path='/card' element={<CardPage />} />
+        </Routes>
+      </main>
+
+      <footer>footer here</footer>
     </Router>
   );
 }

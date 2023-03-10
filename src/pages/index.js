@@ -2,8 +2,8 @@ import React from "react";
 
 export default function HomePage() {
     return(
-        <div>
+        <section>
             <h1>This is Index</h1>
-        </div>
+        </section>
     );
 }

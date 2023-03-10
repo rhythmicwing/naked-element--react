@@ -1,4 +1,5 @@
 import React from "react";
+import '../../scss/testing.scss';
 
 export default function Button({
     buttonText,

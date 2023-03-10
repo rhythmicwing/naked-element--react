@@ -1,0 +1,265 @@
+@use 'variables' as *;
+
+$colors-theme: (
+    light: (
+        primary: $primary-7,
+        on-primary: $primary-16,
+        primary-container: $primary-12,
+        on-primary-container: $primary-2,
+
+        secondary: $secondary-7,
+        on-secondary: $secondary-16,
+        secondary-container: $secondary-12,
+        on-secondary-container: $secondary-2,
+
+        tertiary: $tertiary-7,
+        on-tertiary: $tertiary-16,
+        tertiary-container: $tertiary-12,
+        on-tertiary-container: $tertiary-2,
+
+        surface: $neutral-15,
+        on-surface: $neutral-2,
+
+        surface-variant: $neutral-variant-7,
+        on-surface-variant: $neutral-variant-5,
+
+        background: $neutral-15,
+        on-background: $neutral-2,
+
+        outline:$neutral-variant-8,
+
+
+
+        // Temp
+        innerpage-light: $neutral-11,
+        innerpage-shadow: $neutral-10,
+        on-innerpage:$neutral-4,
+
+        card-light: $neutral-12,
+        card-light-border:$neutral-13,
+        card-shadow:$neutral-11,
+        card-shadow-border:$neutral-10,
+        on-card:$neutral-6,
+
+        button-light: $neutral-14,
+        button-light-border:$neutral-12,
+        button-light-shade:$neutral-12,
+        button-shadow:$neutral-10,
+        button-shadow-border:$neutral-11,
+        button-shadow-shade:$neutral-11,
+        on-button:$neutral-9,
+
+
+
+        success: $success-7,
+        on-success: $success-16,
+
+        warning: $warning-7,
+        on-warning: $warning-16,
+
+        error: $error-7,
+        on-error: $error-16,
+        error-container: $error-12,
+        on-error-container: $error-2,
+    ),
+    dark: (
+        primary: $primary-11,
+        on-primary: $primary-3,
+        primary-container: $primary-5,
+        on-primary-container: $primary-12,
+
+        secondary: $secondary-11,
+        on-secondary: $secondary-3,
+        secondary-container: $secondary-5,
+        on-secondary-container: $secondary-12,
+
+        tertiary: $tertiary-11,
+        on-tertiary: $tertiary-3,
+        tertiary-container: $tertiary-5,
+        on-tertiary-container: $tertiary-12,
+
+        surface: $neutral-2,
+        on-surface: $neutral-12,
+
+        surface-variant: $neutral-variant-5,
+        on-surface-variant: $neutral-variant-11,
+
+        background: $neutral-2,
+        on-background: $neutral-12,
+
+        outline:$neutral-variant-9,
+
+
+
+        // Temp
+        innerpage-light: $neutral-3,
+        innerpage-shadow: $neutral-2,
+        on-innerpage:$neutral-7,
+
+        card-light: $neutral-4,
+        card-light-border:$neutral-5,
+        card-shadow:$neutral-2,
+        card-shadow-border:$neutral-1,
+        on-card:$neutral-9,
+
+        button-light: $neutral-5,
+        button-light-border:$neutral-4,
+        button-light-shade:$neutral-4,
+        button-shadow:$neutral-2,
+        button-shadow-border:$neutral-2,
+        button-shadow-shade:$neutral-2,
+        on-button:$neutral-6,
+
+
+
+        success: $success-11,
+        on-success: $success-3,
+
+        warning: $warning-11,
+        on-warning: $warning-3,
+
+        error: $error-11,
+        on-error: $error-3,
+        error-container: $error-5,
+        on-error-container: $error-12,
+    )
+);
+
+
+// $colors-theme: (
+//     primary-1:$primary-1,
+//     primary-2:$primary-2,
+//     primary-3:$primary-3,
+//     primary-4:$primary-4,
+//     primary-5:$primary-5,
+//     primary-6:$primary-6,
+//     primary-7:$primary-7,
+//     primary-8:$primary-8,
+//     primary-9:$primary-9,
+//     primary-10:$primary-10,
+//     primary-11:$primary-11,
+//     primary-12:$primary-12,
+//     primary-13:$primary-13,
+//     primary-14:$primary-14,
+//     primary-15:$primary-15,
+//     primary-16:$primary-16,
+
+//     secondary-1:$secondary-1,
+//     secondary-2:$secondary-2,
+//     secondary-3:$secondary-3,
+//     secondary-4:$secondary-4,
+//     secondary-5:$secondary-5,
+//     secondary-6:$secondary-6,
+//     secondary-7:$secondary-7,
+//     secondary-8:$secondary-8,
+//     secondary-9:$secondary-9,
+//     secondary-10:$secondary-10,
+//     secondary-11:$secondary-11,
+//     secondary-12:$secondary-12,
+//     secondary-13:$secondary-13,
+//     secondary-14:$secondary-14,
+//     secondary-15:$secondary-15,
+//     secondary-16:$secondary-16,
+
+//     tertiary-1:$tertiary-1,
+//     tertiary-2:$tertiary-2,
+//     tertiary-3:$tertiary-3,
+//     tertiary-4:$tertiary-4,
+//     tertiary-5:$tertiary-5,
+//     tertiary-6:$tertiary-6,
+//     tertiary-7:$tertiary-7,
+//     tertiary-8:$tertiary-8,
+//     tertiary-9:$tertiary-9,
+//     tertiary-10:$tertiary-10,
+//     tertiary-11:$tertiary-11,
+//     tertiary-12:$tertiary-12,
+//     tertiary-13:$tertiary-13,
+//     tertiary-14:$tertiary-14,
+//     tertiary-15:$tertiary-15,
+//     tertiary-16:$tertiary-16,
+
+//     error-1:$error-1,
+//     error-2:$error-2,
+//     error-3:$error-3,
+//     error-4:$error-4,
+//     error-5:$error-5,
+//     error-6:$error-6,
+//     error-7:$error-7,
+//     error-8:$error-8,
+//     error-9:$error-9,
+//     error-10:$error-10,
+//     error-11:$error-11,
+//     error-12:$error-12,
+//     error-13:$error-13,
+//     error-14:$error-14,
+//     error-15:$error-15,
+//     error-16:$error-16,
+
+//     neutral-1:$neutral-1,
+//     neutral-2:$neutral-2,
+//     neutral-3:$neutral-3,
+//     neutral-4:$neutral-4,
+//     neutral-5:$neutral-5,
+//     neutral-6:$neutral-6,
+//     neutral-7:$neutral-7,
+//     neutral-8:$neutral-8,
+//     neutral-9:$neutral-9,
+//     neutral-10:$neutral-10,
+//     neutral-11:$neutral-11,
+//     neutral-12:$neutral-12,
+//     neutral-13:$neutral-13,
+//     neutral-14:$neutral-14,
+//     neutral-15:$neutral-15,
+//     neutral-16:$neutral-16,
+
+//     neutral-variant-1:$neutral-variant-1,
+//     neutral-variant-2:$neutral-variant-2,
+//     neutral-variant-3:$neutral-variant-3,
+//     neutral-variant-4:$neutral-variant-4,
+//     neutral-variant-5:$neutral-variant-5,
+//     neutral-variant-6:$neutral-variant-6,
+//     neutral-variant-7:$neutral-variant-7,
+//     neutral-variant-8:$neutral-variant-8,
+//     neutral-variant-9:$neutral-variant-9,
+//     neutral-variant-10:$neutral-variant-10,
+//     neutral-variant-11:$neutral-variant-11,
+//     neutral-variant-12:$neutral-variant-12,
+//     neutral-variant-13:$neutral-variant-13,
+//     neutral-variant-14:$neutral-variant-14,
+//     neutral-variant-15:$neutral-variant-15,
+//     neutral-variant-16:$neutral-variant-16,
+
+//     success-1:$success-1,
+//     success-2:$success-2,
+//     success-3:$success-3,
+//     success-4:$success-4,
+//     success-5:$success-5,
+//     success-6:$success-6,
+//     success-7:$success-7,
+//     success-8:$success-8,
+//     success-9:$success-9,
+//     success-10:$success-10,
+//     success-11:$success-11,
+//     success-12:$success-12,
+//     success-13:$success-13,
+//     success-14:$success-14,
+//     success-15:$success-15,
+//     success-16:$success-16,
+
+//     warning-1:$warning-1,
+//     warning-2:$warning-2,
+//     warning-3:$warning-3,
+//     warning-4:$warning-4,
+//     warning-5:$warning-5,
+//     warning-6:$warning-6,
+//     warning-7:$warning-7,
+//     warning-8:$warning-8,
+//     warning-9:$warning-9,
+//     warning-10:$warning-10,
+//     warning-11:$warning-11,
+//     warning-12:$warning-12,
+//     warning-13:$warning-13,
+//     warning-14:$warning-14,
+//     warning-15:$warning-15,
+//     warning-16:$warning-16,
+// );
