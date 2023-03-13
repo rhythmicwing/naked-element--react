@@ -13,13 +13,13 @@ button.icon-button {
     border-radius:50%;
 
     box-shadow:
-        3px 3px 4px var(--nl-theme-button-shadow-shade),
-        -3px -3px 4px var(--nl-theme-button-light-shade);
+        3px 3px 5px var(--nl-theme-icon-button-shadow-shade),
+        -3px -3px 5px var(--nl-theme-icon-button-light-shade);
 
     background: linear-gradient(
         145deg,
-        var(--nl-theme-button-shadow-border),
-        var(--nl-theme-button-light-border)
+        var(--nl-theme-icon-button-shadow-border),
+        var(--nl-theme-icon-button-light-border)
     );
 
     &::after {
@@ -33,9 +33,12 @@ button.icon-button {
         border-radius: 50%;
         background: linear-gradient(
             145deg,
-            var(--nl-theme-button-light),
-            var(--nl-theme-button-shadow)
-        );
+            var(--nl-theme-icon-button-light),
+            var(--nl-theme-icon-button-shadow),
+            var(--nl-theme-icon-button-light),
+        )var(--x, 0)/ 200%;
+
+        transition: 0.04s;
     }
 
     i {
@@ -44,18 +47,25 @@ button.icon-button {
         left:50%;
         top:50%;
         transform: translate(-50%, -50%);
-        color: var(--nl-theme-on-button);
+        color: var(--nl-theme-on-icon-button);
+        font-size: 1.3rem;
     }
 
     &.simple {
         background: linear-gradient(
             145deg,
-            var(--nl-theme-button-light),
-            var(--nl-theme-button-shadow)
+            var(--nl-theme-icon-button-light),
+            var(--nl-theme-icon-button-shadow)
         );
 
         &::after {
             display: none;
+        }
+    }
+
+    &:active {
+        &::after {
+            --x: 100%;
         }
     }
 }

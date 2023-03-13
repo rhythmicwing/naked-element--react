@@ -1,0 +1,134 @@
+@use 'variables' as *;
+
+$typography: (
+    font-family: $font-family,
+
+    headline1: (
+        font-size:$headline1--font-size,
+        line-height:$headline1--line-height,
+        font-weight:$headline1--font-weight,
+        letter-spacing:$headline1--letter-spacing,
+        text-decoration:$headline1--text-decoration,
+        text-transform:$headline1--text-transform,
+    ),
+
+    headline2: (
+        font-size:$headline2--font-size,
+        line-height:$headline2--line-height,
+        font-weight:$headline2--font-weight,
+        letter-spacing:$headline2--letter-spacing,
+        text-decoration:$headline2--text-decoration,
+        text-transform:$headline2--text-transform,
+    ),
+
+    headline3: (
+        font-size:$headline3--font-size,
+        line-height:$headline3--line-height,
+        font-weight:$headline3--font-weight,
+        letter-spacing:$headline3--letter-spacing,
+        text-decoration:$headline3--text-decoration,
+        text-transform:$headline3--text-transform,
+    ),
+
+    headline4: (
+        font-size:$headline4--font-size,
+        line-height:$headline4--line-height,
+        font-weight:$headline4--font-weight,
+        letter-spacing:$headline4--letter-spacing,
+        text-decoration:$headline4--text-decoration,
+        text-transform:$headline4--text-transform,
+    ),
+
+    headline5: (
+        font-size:$headline5--font-size,
+        line-height:$headline5--line-height,
+        font-weight:$headline5--font-weight,
+        letter-spacing:$headline5--letter-spacing,
+        text-decoration:$headline5--text-decoration,
+        text-transform:$headline5--text-transform,
+    ),
+
+    headline6: (
+        font-size:$headline6--font-size,
+        line-height:$headline6--line-height,
+        font-weight:$headline6--font-weight,
+        letter-spacing:$headline6--letter-spacing,
+        text-decoration:$headline6--text-decoration,
+        text-transform:$headline6--text-transform,
+    ),
+
+    subtitle1: (
+        font-size:$subtitle1--font-size,
+        line-height:$subtitle1--line-height,
+        font-weight:$subtitle1--font-weight,
+        letter-spacing:$subtitle1--letter-spacing,
+        text-decoration:$subtitle1--text-decoration,
+        text-transform:$subtitle1--text-transform,
+    ),
+
+    subtitle2: (
+        font-size:$subtitle2--font-size,
+        line-height:$subtitle2--line-height,
+        font-weight:$subtitle2--font-weight,
+        letter-spacing:$subtitle2--letter-spacing,
+        text-decoration:$subtitle2--text-decoration,
+        text-transform:$subtitle2--text-transform,
+    ),
+
+    body1: (
+        font-size:$body1--font-size,
+        line-height:$body1--line-height,
+        font-weight:$body1--font-weight,
+        letter-spacing:$body1--letter-spacing,
+        text-decoration:$body1--text-decoration,
+        text-transform:$body1--text-transform,
+    ),
+
+    body2: (
+        font-size:$body2--font-size,
+        line-height:$body2--line-height,
+        font-weight:$body2--font-weight,
+        letter-spacing:$body2--letter-spacing,
+        text-decoration:$body2--text-decoration,
+        text-transform:$body2--text-transform,
+    ),
+
+    caption: (
+        font-size:$caption--font-size,
+        line-height:$caption--line-height,
+        font-weight:$caption--font-weight,
+        letter-spacing:$caption--letter-spacing,
+        text-decoration:$caption--text-decoration,
+        text-transform:$caption--text-transform,
+    ),
+
+    button: (
+        font-size:$button--font-size,
+        line-height:$button--line-height,
+        font-weight:$button--font-weight,
+        letter-spacing:$button--letter-spacing,
+        text-decoration:$button--text-decoration,
+        text-transform:$button--text-transform,
+    ),
+
+    overline: (
+        font-size:$overline--font-size,
+        line-height:$overline--line-height,
+        font-weight:$overline--font-weight,
+        letter-spacing:$overline--letter-spacing,
+        text-decoration:$overline--text-decoration,
+        text-transform:$overline--text-transform,
+    ),
+);
+
+
+
+
+
+
+
+
+
+
+
+

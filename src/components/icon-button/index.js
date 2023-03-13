@@ -1,5 +1,4 @@
 import React from "react";
-import '../../scss/testing.scss';
 import '../../scss/core/components/iconButton.scss'
 
 export default function IconButton({

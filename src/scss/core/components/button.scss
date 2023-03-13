@@ -1,0 +1,139 @@
+@use '../abstracts' as *;
+
+button {
+    &[type="button"], &[type="submit"], &[type="reset"] {
+
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+
+        cursor: pointer;
+        height: 48px;
+        padding:0 $spacing16;
+
+        position: relative;
+        border: 0;
+        border-radius: calc($spacing8 + 2px);
+
+        box-shadow:
+            3px 3px 5px var(--nl-theme-button-shadow-shade),
+            -3px -3px 5px var(--nl-theme-button-light-shade);
+
+        background: linear-gradient(
+            145deg,
+            var(--nl-theme-button-shadow-border),
+            var(--nl-theme-button-light-border)
+        );
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: calc(100% - 4px);
+            height: calc(100% - 4px);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: $spacing8;
+            background:var(--nl-theme-button-light);
+            box-shadow: inset 7px 7px 10px var(--nl-theme-button-light-shade),
+                        inset -7px -7px 10px var(--nl-theme-button-shadow-shade);
+            // background: linear-gradient(
+            //     145deg,
+            //     var(--nl-theme-button-light),
+            //     var(--nl-theme-button-shadow),
+            //     var(--nl-theme-button-light),
+            // )var(--x, 0)/ 200%;
+
+            transition: all 0.15s ease-out;
+        }
+
+        i {
+            position: absolute;
+            z-index: 1;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%);
+            color: var(--nl-theme-on-button);
+            font-size: 1.3rem;
+        }
+
+        span {
+            position: relative;
+            color: var(--nl-theme-on-button);
+        }
+
+        &.simple {
+            background: linear-gradient(
+                145deg,
+                var(--nl-theme-button-light),
+                var(--nl-theme-button-shadow)
+            );
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &:active {
+            &::before {
+                //--x: 100%;
+                box-shadow: inset 7px 7px 10px var(--nl-theme-button-shadow-shade),
+                            inset -7px -7px 10px var(--nl-theme-button-light-shade);
+            }
+        }
+
+
+
+
+        &[disabled="disabled"], &[disabled] {
+            cursor: not-allowed;
+
+            span {
+                color: var(--nl-theme-on-button-disabled);
+            }
+
+            &:active {
+                &::before {
+                    box-shadow: inset 7px 7px 10px var(--nl-theme-button-light-shade),
+                                inset -7px -7px 10px var(--nl-theme-button-shadow-shade);
+                }
+            }
+        }
+    }
+
+    &[type="submit"] {
+        box-shadow:
+            3px 3px 5px var(--nl-theme-button-shadow-shade),
+            -3px -3px 5px var(--nl-theme-button-light-shade);
+
+        background: linear-gradient(
+            145deg,
+            var(--nl-theme-button-primary-shadow-border),
+            var(--nl-theme-button-primary-light-border)
+        );
+
+        span {
+            color: var(--nl-theme-on-primary-button);
+        }
+
+        &::before {
+            content: "";
+            //background:var(--nl-theme-button-primary-light);
+            background: linear-gradient(
+                145deg,
+                var(--nl-theme-button-primary-light),
+                var(--nl-theme-button-primary-light),
+                var(--nl-theme-button-primary-light),
+            )var(--x, 0)/ 200%;
+            box-shadow: inset 7px 7px 10px var(--nl-theme-button-primary-light-shade),
+                        inset -7px -7px 10px var(--nl-theme-button-primary-shadow-shade);
+        }
+
+        &:active {
+            &::before {
+                --x: 100%;
+                box-shadow: inset 7px 7px 10px var(--nl-theme-button-primary-shadow-shade),
+                            inset -7px -7px 10px var(--nl-theme-button-primary-light-shade);
+            }
+        }
+    }
+}

@@ -1,8 +1,11 @@
 import React from "react";
-import '../../scss/core/components/iconButton.scss'
+import '../../scss/core/components/input.scss'
 
-export default function inputStandard() {
+export default function InputStandard({
+    type = "text",
+    placeholder,
+}) {
     return(
-        <input type="text" />
+        <input type={type} placeholder={placeholder} />
     );
 }
