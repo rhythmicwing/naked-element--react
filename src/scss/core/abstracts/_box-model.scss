@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+$spacing: (
+    2: $spacing2,
+    4: $spacing4,
+    6: $spacing6,
+    8: $spacing8,
+    16: $spacing16,
+    24: $spacing24,
+    32: $spacing32,
+    40: $spacing40,
+    48: $spacing48,
+    56: $spacing56,
+    64: $spacing64,
+    72: $spacing72,
+    80: $spacing80,
+);

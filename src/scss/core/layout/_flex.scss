@@ -1,0 +1,171 @@
+@use '../abstracts' as *;
+
+.flex-init {
+    .flex-row {
+        display:flex;
+        flex-wrap: wrap;
+
+        &.no-gutter {
+            >[class^=flex-col] {
+                box-sizing: border-box;
+                padding:$spacing16 0;
+            }
+        }
+
+        >[class^=flex-col] {
+            box-sizing: border-box;
+            padding:$spacing16;
+
+            word-break: break-word;
+            white-space: break-spaces;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            &.v-align-center {
+                align-items: center;
+            }
+
+            &.v-align-bottom {
+                align-items: flex-end;
+            }
+
+            &.h-align-center {
+                justify-content: center;
+            }
+
+            &.h-align-right {
+                justify-content: flex-end;
+            }
+        }
+
+        .flex-col {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        @each $grid-unit, $grid-value in $flex-grid {
+            .flex-col-#{$grid-unit} {
+                flex: 0 0 #{$grid-value};
+                max-width: #{$grid-value};
+            }
+
+            .offset-#{$grid-unit} {
+                margin-left: #{$grid-value};
+            }
+        }
+
+        @include mq-size(xl) {
+            @each $grid-unit, $grid-value in $flex-grid {
+                .flex-col-xl-#{$grid-unit} {
+                    flex: 0 0 #{$grid-value};
+                    max-width: #{$grid-value};
+                }
+            }
+        }
+        @include mq-size(l) {
+            @each $grid-unit, $grid-value in $flex-grid {
+                .flex-col-l-#{$grid-unit} {
+                    flex: 0 0 #{$grid-value};
+                    max-width: #{$grid-value};
+                }
+            }
+        }
+        @include mq-size(m) {
+            @each $grid-unit, $grid-value in $flex-grid {
+                .flex-col-m-#{$grid-unit} {
+                    flex: 0 0 #{$grid-value};
+                    max-width: #{$grid-value};
+                }
+            }
+        }
+
+        @include mq-size(s) {
+            @each $grid-unit, $grid-value in $flex-grid {
+                .flex-col-s-#{$grid-unit} {
+                    flex: 0 0 #{$grid-value};
+                    max-width: #{$grid-value};
+                }
+            }
+        }
+
+        @include mq-size(xs) {
+            @each $grid-unit, $grid-value in $flex-grid {
+                .flex-col-xs-#{$grid-unit} {
+                    flex: 0 0 #{$grid-value};
+                    max-width: #{$grid-value};
+                }
+            }
+        }
+
+        // .flex-col-1 {
+        //     flex: 0 0 8.333333%;
+        //     max-width: 8.333333%;
+        // }
+
+        // .flex-col-2 {
+        //     flex: 0 0 16.666666%;
+        //     max-width: 16.666666%;
+        // }
+
+        // .flex-col-3 {
+        //     flex: 0 0 24.999999%;
+        //     max-width: 24.999999%;
+        // }
+
+        // .flex-col-4 {
+        //     flex: 0 0 33.333332%;
+        //     max-width: 33.333332%;
+        // }
+
+        // .flex-col-5 {
+        //     flex: 0 0 41.666665%;
+        //     max-width: 41.666665%;
+        // }
+
+        // .flex-col-6 {
+        //     flex: 0 0 50%;
+        //     max-width: 50%;
+        // }
+
+        // .flex-col-7 {
+        //     flex: 0 0 58.333333%;
+        //     max-width: 58.333333%;
+        // }
+
+        // .flex-col-8 {
+        //     flex: 0 0 66.666666%;
+        //     max-width: 66.666666%;
+        // }
+
+        // .flex-col-9 {
+        //     flex: 0 0 74.999999%;
+        //     max-width: 74.999999%;
+        // }
+
+        // .flex-col-10 {
+        //     flex: 0 0 83.333332%;
+        //     max-width: 83.333332%;
+        // }
+
+        // .flex-col-11 {
+        //     flex: 0 0 91.666665%;
+        //     max-width: 91.666665%;
+        // }
+
+        // .flex-col-12 {
+        //     flex: 0 0 100%;
+        //     max-width: 100%;
+        // }
+    }
+
+    &.grid-demo {
+        .flex-row {
+            border:1px solid var(--nl-theme-on-card-variant3);
+            >[class^=flex-col] {
+                border:1px solid var(--nl-theme-on-card);
+            }
+        }
+    }
+}

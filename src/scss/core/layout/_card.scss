@@ -1,0 +1,115 @@
+@use '../abstracts' as *;
+
+.nl-card {
+    width: calc(100% - 1px);
+    // margin-top: 50px;
+    // margin-left: 200px;
+    color:var(--nl-theme-on-card);
+    //box-shadow: $z2;
+
+    box-sizing: border-box;
+    padding:$spacing16;
+
+    position: relative;
+    border-radius:$spacing24;
+
+    background: linear-gradient(
+        145deg,
+        var(--nl-theme-card-light),
+        var(--nl-theme-card-shadow)
+    );
+    //background-clip: padding-box;
+
+    &::after {
+        $border-width:-1px;
+
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: $border-width;
+        border-radius: calc( $spacing24 - $border-width );
+        background: linear-gradient(
+            145deg,
+            var(--nl-theme-card-light-border),
+            var(--nl-theme-card-shadow-border)
+        );
+    }
+
+    .card-heading {
+        color:var(--nl-theme-on-card-variant);
+        border-bottom: 2px solid var(--nl-theme-on-card-variant3);
+        padding-bottom: $spacing4;
+        margin-bottom: $spacing16;
+    }
+
+    .card-content {
+        color:var(--nl-theme-on-card-variant1);
+    }
+
+    .card-footer {
+        color:var(--nl-theme-on-card-variant2);
+        border-top: 1px solid var(--nl-theme-on-card-variant3);
+        padding-top: $spacing8;
+        margin-top: $spacing16;
+    }
+}
+
+
+// .nl-card {
+//     width: calc(100% - 1px);
+//     // margin-top: 50px;
+//     // margin-left: 200px;
+//     color:var(--nl-theme-on-card);
+//     box-shadow: $z2;
+
+//     box-sizing: border-box;
+//     padding:$spacing16;
+
+//     position: relative;
+//     border-radius:$spacing24;
+
+//     background: linear-gradient(
+//         145deg,
+//         var(--nl-theme-card-light),
+//         var(--nl-theme-card-shadow)
+//     );
+//     //background-clip: padding-box;
+
+//     &::after {
+//         $border-width:-1px;
+
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         left: 0;
+//         z-index: -1;
+//         margin: $border-width;
+//         border-radius: calc( $spacing24 - $border-width );
+//         background: linear-gradient(
+//             145deg,
+//             var(--nl-theme-card-light-border),
+//             var(--nl-theme-card-shadow-border)
+//         );
+//     }
+
+//     .card-heading {
+//         border-bottom: 2px solid var(--nl-theme-on-card-variant);
+//         padding-bottom: $spacing4;
+//         margin-bottom: $spacing16;
+//     }
+
+//     .card-content {
+//     }
+
+//     .card-footer {
+//         border-top: 1px solid var(--nl-theme-on-card-variant);
+//         padding-top: $spacing4;
+//         margin-top: $spacing16;
+//     }
+// }

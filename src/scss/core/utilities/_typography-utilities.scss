@@ -8,6 +8,8 @@ h1 {
     letter-spacing:$headline1--letter-spacing;
     text-decoration:$headline1--text-decoration;
     text-transform:$headline1--text-transform;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 h2 {
@@ -18,6 +20,8 @@ h2 {
     letter-spacing:$headline2--letter-spacing;
     text-decoration:$headline2--text-decoration;
     text-transform:$headline2--text-transform;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 h3 {
@@ -28,6 +32,8 @@ h3 {
     letter-spacing:$headline3--letter-spacing;
     text-decoration:$headline3--text-decoration;
     text-transform:$headline3--text-transform;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 h4 {
@@ -38,6 +44,8 @@ h4 {
     letter-spacing:$headline4--letter-spacing;
     text-decoration:$headline4--text-decoration;
     text-transform:$headline4--text-transform;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 h5 {
@@ -48,6 +56,8 @@ h5 {
     letter-spacing:$headline5--letter-spacing;
     text-decoration:$headline5--text-decoration;
     text-transform:$headline5--text-transform;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 h6 {
@@ -58,6 +68,8 @@ h6 {
     letter-spacing:$headline6--letter-spacing;
     text-decoration:$headline6--text-decoration;
     text-transform:$headline6--text-transform;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 @each $typo-type, $typo-result in $typography {

@@ -4,10 +4,11 @@ $color-scheme:(
 );
 
 $screen-size:(
-    desktop: 1023px,
-    pad: 767px,
-    dark: 600px,
-    mobile: 500px,
+    xl: 1279px,
+    l: 991px,
+    m: 767px,
+    s: 600px,
+    xs: 500px,
 );
 
 // $primary-1:#000000;
@@ -316,6 +317,20 @@ $spacing56: 56px;
 $spacing64: 64px;
 $spacing72: 72px;
 $spacing80: 80px;
+
+$grid-value-1:8.333333%;
+$grid-value-2:16.666666%;
+$grid-value-3:24.999999%;
+$grid-value-4:33.333332%;
+$grid-value-5:41.666665%;
+$grid-value-6:50%;
+$grid-value-7:58.333333%;
+$grid-value-8:66.666666%;
+$grid-value-9:74.999999%;
+$grid-value-10:83.333332%;
+$grid-value-11:91.666665%;
+$grid-value-12:100%;
+
 
 
 // Elevation

@@ -1,0 +1,66 @@
+@use '../abstracts' as *;
+
+// Margin
+.nl-margin--0 {
+    margin:0;
+}
+
+.nl-margin--0auto {
+    margin:0 auto;
+}
+
+.nl-margin-left--auto {
+    margin-left:auto;
+}
+
+.nl-margin-right--auto {
+    margin-right:auto;
+}
+
+@each $space-name, $space-size in $spacing {
+    .nl-margin--#{$space-size} {
+        margin:#{$space-size};
+    }
+}
+
+@each $space-name, $space-size in $spacing {
+    .nl-margin-top--#{$space-size} {
+        margin-top:#{$space-size};
+    }
+    .nl-margin-right--#{$space-size} {
+        margin-right:#{$space-size};
+    }
+    .nl-margin-bottom--#{$space-size} {
+        margin-bottom:#{$space-size};
+    }
+    .nl-margin-left--#{$space-size} {
+        margin-left:#{$space-size};
+    }
+}
+
+
+// Padding
+.nl-padding--0 {
+    padding:0;
+}
+
+@each $space-name, $space-size in $spacing {
+    .nl-padding--#{$space-size} {
+        padding:#{$space-size};
+    }
+}
+
+@each $space-name, $space-size in $spacing {
+    .nl-padding-top--#{$space-size} {
+        padding-top:#{$space-size};
+    }
+    .nl-padding-right--#{$space-size} {
+        padding-right:#{$space-size};
+    }
+    .nl-padding-bottom--#{$space-size} {
+        padding-bottom:#{$space-size};
+    }
+    .nl-padding-left--#{$space-size} {
+        padding-left:#{$space-size};
+    }
+}

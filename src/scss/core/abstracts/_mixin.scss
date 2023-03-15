@@ -1,10 +1,31 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
 @use 'variables';
+
+@function map-deep-get($map, $keys...) {
+    $scope: $map; $i: 1;
+    @while (meta.type-of($scope) == map) and ($i <= list.length($keys)) {
+        $scope: map.get($scope, list.nth($keys, $i));
+        $i: $i + 1;
+    }
+    @return $scope;
+}
 
 @mixin mq-pc($mode) {
 
     $result: map-get(variables.$color-scheme, $mode);
 
     @media (prefers-color-scheme: $result) {
+        @content;
+    }
+}
+
+@mixin mq-size($size) {
+
+    $screenSize: map-deep-get(variables.$screen-size, $size);
+
+    @media only screen and (max-width: $screenSize)  {
         @content;
     }
 }
